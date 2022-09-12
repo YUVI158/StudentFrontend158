@@ -42,15 +42,15 @@ export default function Student() {
           <Card.Body>
             <Form.Group className="mb-3">
               <Form.Label>Id</Form.Label>
-              <Form.Control type="text" placeholder="Enter email" />
+              <Form.Control type="text" />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter email" />
+              <Form.Control type="text" />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Address</Form.Label>
-              <Form.Control type="text" placeholder="Enter email" />
+              <Form.Control type="text" />
             </Form.Group>
           </Card.Body>
           <Button variant="primary" type="submit">
