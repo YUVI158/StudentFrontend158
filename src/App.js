@@ -3,13 +3,16 @@ import './App.css';
 import Student from './components/Student';
 import StudentList from './components/StudentList';
 import Footer from './components/Footer';
+import Container from 'react-bootstrap/Container';
 
 function App() {
   return (
     <div className="App">
-          <Student/>
-      <StudentList/>
-      <Footer/>
+      <Container>
+        <Student />
+        <StudentList />
+      </Container>
+      <Footer />
     </div>
   );
 }
