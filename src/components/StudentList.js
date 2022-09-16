@@ -6,7 +6,7 @@ import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 import {Link} from 'react-router-dom'
 import axios from "axios";
 
-export default function StudentList() {
+export default function StudentList(props) {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function StudentList() {
     axios.delete("http://localhost:8080/student/" + studentId)
       .then(response => {
         if (response.data !== null) {
-          alert("Record Deleted Successfully");
+          props.showAlert("success", "Record Deleted Successfully");
           setStudents(students.filter(student => student.id !== studentId));
         }
       })
